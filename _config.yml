@@ -1,0 +1,8 @@
+title: Toroidal Foot Curvature in a 3D Passive Dynamic Walker
+description: Repository and build guide for a physical passive dynamic walker with independently swappable toroidal feet.
+theme: jekyll-theme-minimal
+permalink: pretty
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
