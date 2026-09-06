@@ -1,15 +1,16 @@
 ---
 layout: default
-title: Build a Toy
+title: Build a Simple Passive Walker (No CAD Needed)
 ---
-{% include nav.html %}
+
+[← Home](/)
 
 # Build Your First Passive Walker: A Toy
 
 You don't need CAD, a 3D printer, or bearings to see passive dynamic walking work. The
 entire phenomenon — a two-legged mechanism walking down a slope using nothing but
 gravity and its own geometry — can be built on a desk with cardboard and a couple of
-pins. This page is the on-ramp before the [research-grade design](/design/): build this
+pins. This page is the on-ramp before the [research-grade design](/research/design/): build this
 first, feel why it walks, then go add curvature and rigor.
 
 ## Why this works at all
@@ -22,7 +23,7 @@ its own weight, just like a pendulum released from an angle. If the geometry (le
 length, hip placement, foot shape, mass distribution) is right for the slope angle you've
 chosen, the walker settles into a repeating gait instead of tipping over or grinding to a
 stop. Get the geometry wrong for that slope, and it won't — this tuning relationship is
-the entire subject of the [math](/derivation/) and [experiment](/experiment/) sections
+the entire subject of the [math](/research/derivation/) and [experiment](/research/experiment/) sections
 later on this site.
 
 ## What you need
@@ -58,7 +59,7 @@ give it a very gentle push or just let go. Watch what happens:
   recovered — usually hip friction, or feet not rolling cleanly.
 - If it walks several steps and picks up speed until it topples: it's gaining more energy
   from the slope than it loses per step, which is one of the same gait regimes this
-  project measured formally in its [results](/results/).
+  project measured formally in its [results](/research/results/).
 
 Try a few different ramp angles for the same walker. You'll find a narrow range where it
 actually walks several steps consistently — that range is exactly what "basin of
@@ -69,5 +70,7 @@ attraction" means for physical geometry rather than just a simulation abstractio
 Once you've got a toy version walking reliably, the natural next questions are exactly
 the ones this research addresses: what happens if you change the *shape* of the foot's
 curvature independently in two different directions, and can you predict how that changes
-the walker's timing before you build it? That's the [Prototype & Design](/design/) and
-[The Math](/derivation/) pages.
+the walker's timing before you build it?
+
+- **[How the Robot Was Built](/research/design/)** — the research-grade version of the same idea.
+- **[The Research](/research/)** — the full hub, if you'd rather pick a specific piece.

@@ -1,8 +1,9 @@
 ---
 layout: default
-title: Intro to Passive Dynamic Walking
+title: What Is Passive Dynamic Walking?
 ---
-{% include nav.html %}
+
+[← Home](/)
 
 # What Is Passive Dynamic Walking?
 
@@ -54,6 +55,8 @@ geometries — which is the approach this project takes. Specifically, it invest
 into a modular robot with feet that swap in and out, so each curvature parameter can be
 isolated and tested directly on a physical slope rather than only in simulation.
 
-If you want to feel this physically before reading further, go build the
-[simple toy version](/build-a-toy/) first. If you want to go straight to the
-research-grade robot, continue to [Prototype & Design](/design/).
+## Where to go from here
+
+- **[Build a Simple Passive Walker](/build-a-toy/)** — feel this physically with
+  cardboard and a pin before reading anything more technical.
+- **[The Research](/research/)** — skip straight to the actual robot, math, and data.

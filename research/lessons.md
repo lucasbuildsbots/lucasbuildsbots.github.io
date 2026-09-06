@@ -1,8 +1,9 @@
 ---
 layout: default
-title: Lessons Learned
+title: What We Learned the Hard Way
 ---
-{% include nav.html %}
+
+[← Back to The Research](/research/)
 
 # Lessons Learned
 
@@ -30,7 +31,7 @@ complication at another. Worth checking before adding complexity by default.
 
 Foot length has to be long enough that the walker never rolls onto the foot's actual
 edge during normal gait. Once that happens, the rolling-contact assumption underlying
-the entire [derivation](/derivation/) breaks — the physical foot stops behaving like the
+the entire [derivation](/research/derivation/) breaks — the physical foot stops behaving like the
 math describes it. This is a design constraint that has to be checked for *every* foot
 configuration tested, not just assumed to hold.
 
@@ -67,7 +68,33 @@ is the top item for future work, rather than just refining the current video met
   could eventually inform curvature designs that help guide natural walking for people
   with injuries or gait disabilities.
 
+## What didn't work
+
+The final assembly on the [CAD page](/research/cad/) is the version that worked — but it wasn't
+the first attempt. Showing what failed and why is more useful to someone building their
+own walker than only showing the polished result, and it's the same reason the sagittal
+radius findings are reported as an open question rather than forced into a clean
+conclusion: an honest account of what the process actually looked like.
+
+<!--
+  ADD: a photo of each failed prototype, with one or two sentences on what specifically
+  went wrong and what it taught you (e.g. "hip joint too stiff — walker fell forward
+  every time" or "foot arc too short — rolled onto the edge and pivoted instead of
+  rocking"). Duplicate this block per failed attempt:
+
+### Attempt N: [short description]
+![Failed prototype N](/assets/img/failed-prototype-N.jpg)
+
+What went wrong: ...
+What it taught: ...
+-->
+
 ## Acknowledgments
 
 Thanks to Michael Liva and Arend L. Schwab for advice on constructing the walker, and to
 Carlos Nodarse at Bergen County Academies for providing 3D printers and lab space.
+
+## Where to go from here
+
+- **[The Research](/research/)** — pick another piece, or revisit one.
+- **[Home](/)** — start over from the top-level paths.

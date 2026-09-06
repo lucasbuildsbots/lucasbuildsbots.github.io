@@ -1,8 +1,9 @@
 ---
 layout: default
-title: The Math
+title: 'The Math: Predicting Rocking Period from Curvature'
 ---
-{% include nav.html %}
+
+[← Back to The Research](/research/)
 
 # The Math: Frontal Curvature and Rocking Period
 
@@ -118,7 +119,7 @@ depends on geometry alone:
 
 $R_2 > R_1$ predicts $T_2 < T_1$: a larger frontal radius of curvature produces a shorter
 rocking period. This is checked directly against physical trial data on the
-[results page](/results/), where predicted and measured ratios differ by at most 1.0%
+[results page](/research/results/), where predicted and measured ratios differ by at most 1.0%
 across all six radius pairings tested.
 
 ## How good is the small-angle approximation, really
@@ -142,10 +143,17 @@ This is a small-angle approximation of the rocking timing on a level surface —
 deliberately does not model swing-leg inertia coupling, energy losses from foot
 collisions, or yaw motion, all of which are present during actual gait on the slope. The
 fact that the prediction still matches measured rocking periods to within 1% (see
-[Results](/results/)) suggests these unmodeled dynamics don't substantially change the
+[Results](/research/results/)) suggests these unmodeled dynamics don't substantially change the
 $R_f$–period relationship over the conditions tested — but that's an empirical finding
 from the data, not something built into the derivation itself.
 
 $R_s$, notably, doesn't appear anywhere in this derivation — it's a frontal-plane-only
 result. Whether and how $R_s$ affects timing is an open, purely empirical question,
-covered on the [results page](/results/).
+covered on the results page linked below.
+
+## Where to go from here
+
+- **[How We Tested It](/research/experiment/)** — the actual ramp and trial protocol this
+  prediction was checked against.
+- **[What We Found](/research/results/)** — the data itself, including the six-pairing
+  comparison mentioned above.

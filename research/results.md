@@ -1,8 +1,9 @@
 ---
 layout: default
-title: Results
+title: What We Found
 ---
-{% include nav.html %}
+
+[← Back to The Research](/research/)
 
 # Results
 
@@ -10,7 +11,7 @@ title: Results
 
 As $R_f$ increased from 110 mm to 140 mm (with $R_s$ held at 100 mm), the rocking period
 decreased — exactly the direction predicted by the derivation on
-[The Math](/derivation/) page.
+[The Math](/research/derivation/) page.
 
 <!-- ADD: Fig. 6 chart, Rf vs average rocking period
 ![Increasing Rf decreases rocking period](/assets/img/fig6-rf-vs-period.png)
@@ -32,7 +33,7 @@ vary.
 
 ## Checking the prediction directly
 
-The predicted ratio $T_2/T_1$ from Eq. (15) on [The Math](/derivation/) page was
+The predicted ratio $T_2/T_1$ from Eq. (15) on [The Math](/research/derivation/) page was
 calculated for every possible pairing among the four frontal radii tested, and compared
 against the measured ratio from trial data. Across all six pairings, predicted and
 measured ratios differ by **at most 1.0%**.
@@ -106,8 +107,15 @@ the larger radii tested, the opposite happens: an energy deficit means the walke
 more to damping than it gains from the slope, so steps get shorter and slower until it
 shuffles to a stop. This is proposed as a logical interpretation of the observed data,
 not a derived result — a theoretical model capturing it directly is future work (see
-[Lessons Learned](/lessons/)).
+[Lessons Learned](/research/lessons/)).
 
 Practically, this also explains why the smaller-radius walkers took *fewer* steps before
 the trial ended: they speed up until they fall, while the larger-radius walkers slow to a
 stop on their own, in a statically stable configuration, without falling.
+
+## Where to go from here
+
+- **[What We Learned the Hard Way](/research/lessons/)** — the practical lessons and open
+  questions behind these numbers.
+- **[Foot Geometry & CAD Files](/research/cad/)** — the actual foot files these results were
+  measured from.

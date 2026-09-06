@@ -1,8 +1,9 @@
 ---
 layout: default
-title: Prototype & Design
+title: How the Robot Was Built
 ---
-{% include nav.html %}
+
+[← Back to The Research](/research/)
 
 # Prototype & Design
 
@@ -11,8 +12,8 @@ title: Prototype & Design
 The walker's design is inspired by the model introduced by Tedrake et al.: two legs
 connected by a pin joint at the hip, with toroidal curved feet that provide foot
 clearance through lateral rocking. The feet are the whole point of the design — their
-surface profile is defined by the toroidal equation covered on the [math](/derivation/)
-and [CAD](/cad/) pages, with independent frontal-plane radius $R_f$ and sagittal-plane
+surface profile is defined by the toroidal equation covered on the [math](/research/derivation/)
+and [CAD](/research/cad/) pages, with independent frontal-plane radius $R_f$ and sagittal-plane
 radius $R_s$.
 
 <!-- ADD: Fig. 1 visual render of the model
@@ -64,7 +65,7 @@ Every foot's other geometric variables — length, width, and contribution to th
 overall standing height — were held constant across configurations, so that only
 curvature changed between trials. Foot length specifically has to be long enough that the
 walker doesn't roll onto the foot's edge during normal gait (once that happens, the
-[rolling assumption in the derivation](/derivation/) no longer holds). Center of mass
+[rolling assumption in the derivation](/research/derivation/) no longer holds). Center of mass
 was also held fixed across feet by keeping every foot's mass consistent at
 **27.45 ± 0.26 g**, achieved by adjusting 3D-print infill density rather than geometry.
 
@@ -74,7 +75,7 @@ A baseline walker — feet with $R_f = 120$ mm and $R_s = 100$ mm — could walk
 consistently for about 40 steps down an 8-foot ramp tilted at 0.0663 rad (3.80°), started
 by hand. The walker weighs **450.9 g**, has a leg length of **12.87 cm**, and a center of
 mass height $h_0$ of approximately **61.5 mm**. This baseline is what the swappable feet
-were tested against — see [Experimental Setup](/experiment/).
+were tested against — see [Experimental Setup](/research/experiment/).
 
 <!-- ADD: Fig. 5, physical walker on the inclined ramp
 ![Physical passive walker on inclined ramp](/assets/img/fig5-ramp.jpg)
@@ -83,3 +84,32 @@ were tested against — see [Experimental Setup](/experiment/).
 <!-- ADD: link to your 8-foot walk video, e.g.:
 [Watch the 8-foot walk](/assets/8-foot-walk.mov)
 -->
+
+## Video
+
+<!--
+  ADD: your actual walker video, using ONE of the two options below depending on file
+  size. GitHub blocks any file over 100MB outright and warns above 50MB, so check your
+  file's size first (right-click it in File Explorer > Properties).
+
+  OPTION A — small clip (well under 50MB, e.g. a short compressed .mp4), hosted directly
+  in the repo. Put the file at assets/video/8-foot-walk.mp4, then uncomment:
+
+  <video controls width="100%" src="/assets/video/8-foot-walk.mp4"></video>
+
+  OPTION B — larger or raw phone footage. Upload it to YouTube (an "Unlisted" video works
+  fine — it won't show up in search or on your channel, but anyone with the link, or
+  anyone visiting this page, can watch it), then uncomment and replace VIDEO_ID with the
+  ID from the video's URL (the part after watch?v=):
+
+  <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID"
+    title="8-foot walk" frameborder="0" allowfullscreen></iframe>
+-->
+
+
+## Where to go from here
+
+- **[The Math](/research/derivation/)** — why this design predicts a specific relationship
+  between $R_f$ and rocking period.
+- **[Foot Geometry & CAD Files](/research/cad/)** — the exact surface equation and files for the
+  feet described above.
