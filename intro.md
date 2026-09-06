@@ -45,15 +45,25 @@ spherical feet, could not find a set of design parameters producing a periodic g
 it didn't account for some dynamics present in a real physical walker, such as yaw
 (twisting about the vertical axis).
 
-## Where this project fits
+## How this project started
 
-The mechanics of passive dynamic walking, and the accurate simulation of fabricable
-designs, are not yet fully understood. Given the limits of simulation-based approaches,
-**physical experimentation** is a valuable complementary path for exploring curved-foot
-geometries — which is the approach this project takes. Specifically, it investigates a
-**toroidal** foot: independently curved in the frontal and sagittal directions, built
-into a modular robot with feet that swap in and out, so each curvature parameter can be
-isolated and tested directly on a physical slope rather than only in simulation.
+We came across passive dynamic walking and were struck by how elegant the idea is: a
+machine that walks down a slope using nothing but its own mechanical design and gravity —
+no motors, no control loop, nothing driving the gait at all. We wanted to build one
+ourselves.
+
+We started with the simplest model we could design, inspired by Tedrake's work — two legs,
+a pin joint at the hip, curved feet. After a lot of tinkering with the model's design
+parameters, we eventually reached a version that could take about 40 steps in its best
+trial. Forty consecutive steps meant we'd actually found a real stable configuration, not
+just gotten lucky for a step or two.
+
+Once the walker actually worked, we wanted to understand *why* it worked rather than stop
+at "it walks." That's what turned our attention to the feet specifically: we built a
+novel swappable-foot mechanism so multiple foot curvatures could be tested on the exact
+same physical body, and found consistent trends relating the feet's circular curvature to
+measurable properties of the gait. Those trends, together with physical reasoning and
+closed-form calculation, are what the rest of this research builds out.
 
 ## Where to go from here
 
