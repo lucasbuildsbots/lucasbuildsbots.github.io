@@ -67,6 +67,6 @@ closed-form calculation, are what the rest of this research builds out.
 
 ## Where to go from here
 
-- **[Build a Simple Passive Walker](/build-a-toy/)** — feel this physically with
-  cardboard and a pin before reading anything more technical.
+- **[Flat-Ground Walking Toys](/build-a-toy/)** — see what we built from these
+  insights, or scroll to the DIY guide to feel it physically yourself first.
 - **[The Research](/research/)** — skip straight to the actual robot, math, and data.

@@ -35,9 +35,9 @@ all, and where curved feet fit into that story. Ends by pointing you toward eith
 building something with your hands, or the research directly.
 
 ### I want to build something with my hands, no CAD required
-Go to **[Build a Simple Passive Walker](/build-a-toy/)** — cardboard, a pin, and a
-tiltable ramp. No 3D printer, no equations, just enough to feel why this works before
-looking at any of the research below.
+Go to **[Flat-Ground Walking Toys](/build-a-toy/)** — see the toys built from what we
+learned on the sloped walker (or jump to the no-CAD DIY guide further down that page),
+cardboard and a pin, no 3D printer needed for the simplest version.
 
 ### I already know PDW, or I want the actual research
 Go straight to **[The Research](/research/)** — a hub page that lets you jump to

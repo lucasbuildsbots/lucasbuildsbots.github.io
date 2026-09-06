@@ -1,19 +1,74 @@
 ---
 layout: default
-title: Build a Simple Passive Walker (No CAD Needed)
+title: Flat-Ground Walking Toys
+permalink: /build-a-toy/
 ---
 
 [← Home](/)
 
-# Build Your First Passive Walker: A Toy
+# From a Sloped Walker to a Flat-Ground Toy
 
-You don't need CAD, a 3D printer, or bearings to see passive dynamic walking work. The
-entire phenomenon — a two-legged mechanism walking down a slope using nothing but
+Everything on the [research pages](/research/) is about a walker whose only energy
+source is a slope — gravity pulls it forward and down, and that's what drives the
+entire gait. Once we understood *why* that walker worked, a natural question followed:
+could the same passive-walking principles produce something that walks on a flat
+table, with no ramp and no slope supplying energy at all?
+
+Using what we learned building and tuning the sloped walker, we built toys that do
+exactly that — they walk across a flat surface, no incline involved.
+
+<!-- ADD: explain your actual answer here — specifically, what replaces the slope as
+     the energy source (an initial push, stored spring energy, etc.), and which parts of
+     the sloped design carried over directly (foot curvature, hip joint design) versus
+     what had to change to make flat-ground walking possible. -->
+
+This page documents those toys: what was built, why it works, and the files to build
+your own version.
+
+## CAD files
+
+<!-- ADD: your toy's CAD models, e.g.:
+
+<model-viewer src="/build-a-toy/cad/toy.glb" alt="Flat-ground toy walker"
+  auto-rotate camera-controls style="width: 100%; height: 400px;">
+</model-viewer>
+
+[Download STEP file](/build-a-toy/cad/toy.step)
+
+Files go in the build-a-toy/cad/ folder.
+-->
+
+## Photos
+
+<!-- ADD: photos of the toy, e.g.:
+![The flat-ground toy walker](/build-a-toy/img/toy.jpg)
+
+Files go in the build-a-toy/img/ folder.
+-->
+
+## Video
+
+<!-- ADD: a clip of it walking on the table. Same two options as the research video
+     spots, depending on file size — files go in the build-a-toy/video/ folder if using
+     Option A:
+
+OPTION A — small clip hosted directly in the repo:
+<video controls width="100%" src="/build-a-toy/video/toy-walk.mp4"></video>
+
+OPTION B — larger file via YouTube (Unlisted is fine):
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID"
+  title="Flat-ground toy walk" frameborder="0" allowfullscreen></iframe>
+-->
+
+## Build a simple version yourself
+
+You don't need CAD, a 3D printer, or bearings to see the basic phenomenon that all of
+this is built on. The entire idea — a two-legged mechanism walking using nothing but
 gravity and its own geometry — can be built on a desk with cardboard and a couple of
-pins. This page is the on-ramp before the [research-grade design](/research/design/): build this
-first, feel why it walks, then go add curvature and rigor.
+pins. Build this first, feel why it walks, then look at the flat-ground toy above or the
+[research-grade design](/research/design/) for where it leads.
 
-## Why this works at all
+### Why this works at all
 
 A passive walker doesn't need motors because gravity plus geometry can produce the same
 alternating stance/swing motion that a motor would otherwise have to drive. Put the
@@ -23,10 +78,10 @@ its own weight, just like a pendulum released from an angle. If the geometry (le
 length, hip placement, foot shape, mass distribution) is right for the slope angle you've
 chosen, the walker settles into a repeating gait instead of tipping over or grinding to a
 stop. Get the geometry wrong for that slope, and it won't — this tuning relationship is
-the entire subject of the [math](/research/derivation/) and [experiment](/research/experiment/) sections
-later on this site.
+the entire subject of the [math](/research/derivation/) and
+[experiment](/research/experiment/) sections later on this site.
 
-## What you need
+### What you need
 
 - Two legs — stiff material (cardboard, thin plywood, or acrylic), roughly equal length,
   straight.
@@ -40,7 +95,7 @@ later on this site.
 - A ramp — a board you can tilt to different shallow angles, ideally with some texture
   (sandpaper, felt, a rubber mat) rather than a slick surface.
 
-## Assembly and why each choice matters
+### Assembly and why each choice matters
 
 Connect the two legs at the hip so they can swing freely past each other, like a pair of
 scissors that can open past straight. Attach a curved foot to the bottom of each leg,
@@ -48,7 +103,7 @@ oriented so the leg rocks forward-backward on the curve rather than sitting on a
 sole. Keep the two legs and feet as close to identical in mass and shape as you can — an
 asymmetric walker will pull to one side or twist (yaw) instead of walking straight.
 
-## Testing it
+### Testing it
 
 Stand the walker at the top of the ramp with one leg forward as the "stance" leg, and
 give it a very gentle push or just let go. Watch what happens:
@@ -67,10 +122,6 @@ attraction" means for physical geometry rather than just a simulation abstractio
 
 ## Where to go from here
 
-Once you've got a toy version walking reliably, the natural next questions are exactly
-the ones this research addresses: what happens if you change the *shape* of the foot's
-curvature independently in two different directions, and can you predict how that changes
-the walker's timing before you build it?
-
-- **[How the Robot Was Built](/research/design/)** — the research-grade version of the same idea.
+- **[How the Robot Was Built](/research/design/)** — the research-grade version of the
+  same idea, on a slope.
 - **[The Research](/research/)** — the full hub, if you'd rather pick a specific piece.
